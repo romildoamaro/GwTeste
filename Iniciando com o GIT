@@ -1,0 +1,77 @@
+
+
+Ao inves de senha no git vc vai usar esse token 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/ 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
+
+estou tentando pegar so aquele token. bom
+Pronto. Antes de fazer alteracoes no projeto
+Vamos trabalhar assim com o git
+
+
+atualizar o projeto:
+git fetch gwsistemas custom
+git reset --hard gwsistemas/custom
+
+criar uma branch so para a story
+git checkout -b custom-XXXX
+onde XXXX eh o numero da story
+
+depois de concluir a story
+
+fazer o commit das alteracoes
+
+git commit -am "mensagem"
+
+abrir o PULL REQUEST
+
+git push gwsistemas custom-XXXX
+
+abrir o link gerado para o PR e no Github fazer o Pull request para a branch custom.
+
+Por ultimo vc vai copiar o link do PR feito nos comentarios da story.
+
+Ok? Alguma duvida?
+
+Certo. Vou mostrar na pratica agora.
+
+Guarda aquele token vc vai usar ele como senha quando for rodar alguns comandos do git. 
+
+
+senha suporte: W3b7r@n$2.0 / #GwAltru!st@
+
+
+--select * from vbi_relrazao_planocusto
+--select * from mov_banco
+--select * from conta
+
+
+
+
+gw_preferencias.tela_consulta_sistema_usuario
+
+p.is_gera_mapa_policia_federal
+
+vw_listar_produtos
+
+
+
+select descricao_servico, id from vbi_nota_servico where id = 53066
+--select * from type_services
+--select numero from nota_fiscal
+select * from sales where id = 53072
+
+select * from nota_fiscal 
+
+select veiculo_apropriacao, id from vbi_nota_servico
+
+select notas, id from vbi_nota_servico where id = 53067
+
+select array_to_string(array_agg(descricao order by descricao), ', ')
+from type_services group by id
+where id = 53066 group by id
+
+select descricao from type_services  
+LEFT JOIN (SELECT ts.id
+, array_agg(ts.descricao::varchar ORDER BY ts.descricao, ',') as descricao_servico
+FROM type_services ts GROUP BY ts.id
+		   
+		   select * from sales
